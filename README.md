@@ -5,6 +5,20 @@ A distributed intrusion detection system (IDS) for industrial IoT environments t
 
 ---
 
+## Dataset
+
+Due to size constraints and data governance considerations, the dataset is not included in this repository.
+
+You can download the dataset from Kaggle:
+
+👉 https://www.kaggle.com/datasets/vishala28/swat-dataset-secure-water-treatment-system
+
+After downloading:
+- Place the dataset inside a `data/` directory in the project root
+- Ensure file paths match those used in the notebooks
+
+---
+
 ## Problem Statement
 Industrial water treatment systems generate highly sensitive sensor data that cannot be centralized due to privacy and operational constraints. At the same time:
 
@@ -128,10 +142,11 @@ git clone https://github.com/im-kozhandha/Adaptive_Federated_Water_IoT
 # Install dependencies
 pip install -r requirements.txt
 
+# Download dataset from Kaggle and place in /data folder
+
 # Run notebooks sequentially
 cd notebooks
 
-# Step-wise execution
 01_data_preprocessing.ipynb
 02_edge_node_simulation.ipynb
 03_edge_local_training.ipynb
